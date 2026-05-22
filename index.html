@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Willy's — We'll Be Right Back</title>
+    <meta name="description" content="Willy's is currently undergoing scheduled maintenance. We'll be back online shortly." />
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <div class="logo-wrap" aria-hidden="true">
+                <img src="logo.svg" alt="Willy's" class="logo" />
+            </div>
+
+            <span class="badge">
+                <span class="badge-dot"></span>
+                Scheduled maintenance
+            </span>
+
+            <h1>We'll be right back.</h1>
+            <p class="subtitle">
+                Willy's is getting a quick tune-up. We're improving things behind the scenes so your next order tastes even better.
+            </p>
+
+            <div class="countdown" role="timer" aria-live="polite" aria-label="Time remaining">
+                <div class="time-block">
+                    <span class="time-value" id="minutes">10</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <span class="time-sep" aria-hidden="true">:</span>
+                <div class="time-block">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+
+            <div class="progress" aria-hidden="true">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <p class="status" id="status-text">Estimated time remaining</p>
+
+            <div class="footer">
+                <p>Thanks for your patience.</p>
+                <p class="signature">— The Willy's Team</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="countdown.js"></script>
+</body>
+</html>
