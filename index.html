@@ -34,6 +34,44 @@
                 <p class="signature">— The Willy's Team</p>
             </div>
         </div>
+
+        <section class="card game-card" aria-label="Mini game">
+            <span class="badge badge-alt">
+                <span class="badge-dot"></span>
+                Play while you wait
+            </span>
+
+            <h2 class="game-title">Burger Catcher</h2>
+            <p class="game-subtitle">Catch the food, dodge the bombs!</p>
+
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value" id="game-score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Lives</span>
+                    <span class="stat-value" id="game-lives">❤️❤️❤️</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Best</span>
+                    <span class="stat-value" id="game-high">0</span>
+                </div>
+            </div>
+
+            <div class="game-canvas-wrap">
+                <canvas id="game-canvas" aria-label="Burger Catcher game canvas"></canvas>
+                <div class="game-overlay" id="game-overlay">
+                    <h3 id="game-overlay-title">Ready?</h3>
+                    <p id="game-overlay-text">Catch the food before it hits the floor. Avoid the bombs!</p>
+                    <button id="game-start" class="btn" type="button">Play</button>
+                </div>
+            </div>
+
+            <p class="game-hint">← → arrow keys, mouse, or touch to move your plate</p>
+        </section>
     </main>
+
+    <script src="game.js"></script>
 </body>
 </html>
